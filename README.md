@@ -1,31 +1,40 @@
 # Projeto de Geração de Dados e Análise
 
-Este projeto consiste em três partes que visam gerar dados simulados, armazená-los em um banco de dados SQLite e realizar análises exploratórias sobre esses dados. Abaixo estão detalhadas as etapas de cada parte do projeto, juntamente com os resultados obtidos.
+Este repositório contém um projeto de criação de um ambiente de Data Lake, onde são gerados dados simulados, armazenados em arquivos CSV e posteriormente integrados e analisados utilizando um banco de dados SQLite. O projeto é dividido em três partes:
+
+1. **Geração de Dados:** Nesta etapa, dados simulados são gerados para representar vendas de produtos. São criados múltiplos arquivos CSV, cada um contendo informações sobre vendas de produtos, como `quantidade`, `valor` e `categoria`.
+
+2. **Armazenamento dos Dados:** Os dados gerados na etapa anterior são armazenados em um banco de dados `SQLite`. Cada arquivo CSV é lido em um DataFrame e posteriormente escrito em uma tabela correspondente no banco de dados.
+
+3. **Análise Exploratória:** Por fim, é realizada uma análise exploratória dos dados armazenados no banco de dados SQLite. São gerados gráficos e estatísticas descritivas para entender melhor os padrões e tendências nos dados de vendas.
+
+Resumidamente, as três partes visam gerar dados simulados, armazená-los em um banco de dados SQLite e realizar análises exploratórias sobre esses dados. Abaixo estão detalhadas as etapas de cada parte do projeto, juntamente com os resultados obtidos.
 
 ## Parte 1: Geração de Dados
 
-Nesta parte, dados simulados foram gerados para simular vendas de produtos. Foram criados 10 arquivos CSV, cada um contendo 1000 linhas de dados. Os dados incluem três colunas: `coluna1`, `coluna2` e `coluna3`. A `coluna1` contém números inteiros aleatórios entre 0 e 100, a `coluna2` contém números aleatórios seguindo uma distribuição normal e a `coluna3` contém valores aleatórios escolhidos entre 'A', 'B' e 'C'. Os dados foram armazenados na pasta 'data_lake'.
+![Print Google Colab](https://github.com/jesercaceres/Datalake/assets/97481583/3942e8b4-e0f8-475b-b51a-ec5900a6e850)
 
-[Link para o código no Google Colab](link_para_o_colab)
+
+Nesta parte, dados simulados foram gerados para simular vendas de produtos. Foram criados `10 arquivos CSV`, cada um contendo 1000 linhas de dados. Os dados incluem três colunas: `coluna1`, `coluna2` e `coluna3`. A `coluna1` contém números inteiros aleatórios entre 0 e 100, a `coluna2` contém números aleatórios seguindo uma distribuição normal e a `coluna3` contém valores aleatórios escolhidos entre 'A', 'B' e 'C'. Os dados foram armazenados na pasta 'data_lake'.
 
 ## Parte 2: Armazenamento dos Dados no Banco de Dados SQLite
 
-Na segunda parte do projeto, os dados gerados na Parte 1 foram armazenados em um banco de dados SQLite. Cada arquivo CSV foi lido em um DataFrame e em seguida escrito em uma tabela correspondente no banco de dados. Caso a tabela já existisse, os dados foram substituídos. O banco de dados foi criado na pasta 'data_lake.db'.
+![Print Google Colab](https://i.imgur.com/PGEX6HG.png)
 
-[Link para o código no Google Colab](link_para_o_colab)
+Na segunda parte do projeto, os dados gerados na Parte 1 foram armazenados em um banco de dados SQLite. Cada arquivo CSV foi lido em um DataFrame e em seguida escrito em uma tabela correspondente no banco de dados. Caso a tabela já existisse, os dados foram substituídos. O banco de dados foi criado na pasta `'data_lake.db'`.
 
 ## Parte 3: Análise Exploratória dos Dados
 
+![Print Google Colab](https://i.imgur.com/dv8y40A.png)
+
 Na última parte do projeto, foi realizada uma análise exploratória dos dados armazenados no banco de dados SQLite. Um DataFrame foi criado a partir dos dados da tabela 'dados_1' e foram realizadas as seguintes análises:
 
-- Impressão das primeiras linhas do DataFrame.
-- Impressão de informações sobre o DataFrame (tipo de dado, número de entradas não nulas).
-- Impressão de um resumo estatístico do DataFrame (média, desvio padrão, mínimo, máximo, quartis).
-- Plotagem de um gráfico de dispersão entre as colunas 'coluna1' e 'coluna2'.
-- Plotagem de um histograma da coluna 'coluna1'.
-- Plotagem de um boxplot da coluna 'coluna1' em relação à coluna 'coluna3'.
-
-[Link para o código no Google Colab](link_para_o_colab)
+1. **Impressão** das primeiras linhas do DataFrame.
+2. **Impressão de informações sobre o DataFrame** (tipo de dado, número de entradas não nulas).
+3. **Impressão de um resumo estatístico do DataFrame** (média, desvio padrão, mínimo, máximo, quartis).
+4. **Plotagem de um gráfico de dispersão** entre as colunas 'coluna1' e 'coluna2'.
+5.**Plotagem de um histograma** da coluna 'coluna1'.
+6. **Plotagem de um boxplot** da coluna 'coluna1' em relação à coluna 'coluna3'.
 
 ## Resultados
 
