@@ -1,6 +1,13 @@
-# Projeto de Geração de Dados e Análise
+ <h1 align ="center">Geração de Dados e Análise através de Data Lake</h1>
 
-Este repositório contém um projeto de criação de um ambiente de Data Lake, onde são gerados dados simulados, armazenados em arquivos CSV e posteriormente integrados e analisados utilizando um banco de dados SQLite. O projeto é dividido em três partes:
+<p align="center">
+  <img src="https://i.imgur.com/z61i01Z.jpeg" alt="DataLake image">
+</p>
+
+<p align="justify">
+Este repositório contém um projeto de criação de um ambiente de Data Lake, onde são gerados dados simulados, armazenados em arquivos CSV e posteriormente integrados e analisados utilizando um banco de dados SQLite.
+
+O projeto é dividido em três partes:
 
 1. **Geração de Dados:** Nesta etapa, dados simulados são gerados para representar vendas de produtos. São criados múltiplos arquivos CSV, cada um contendo informações sobre vendas de produtos, como `quantidade`, `valor` e `categoria`.
 
@@ -38,4 +45,12 @@ Na última parte do projeto, foi realizada uma análise exploratória dos dados 
 
 ## Resultados
 
-Os resultados das análises realizadas estão disponíveis nos respectivos códigos executados no Google Colab. Os dados gerados e armazenados podem ser encontrados na pasta 'data_lake' e o banco de dados SQLite 'data_lake.db'.
+Os resultados das análises realizadas estão disponíveis no arquivo [DataLake](https://github.com/jesercaceres/Datalake/blob/main/datalake.ipynb). 
+
+## Acesso ao Google Colab
+
+O código utilizado para este projeto está disponível em meu [Google Colab](https://colab.research.google.com/drive/10_GeIfdEeq-RMBtkfJYrbvMv7ipIp_J9?usp=sharing). 
+
+Você pode acessar e executar diretamente em seu navegador.
+
+</p>
